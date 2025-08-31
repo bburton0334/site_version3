@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briana Burton - Personal</title>
+    <meta name="description" content="Get to know Briana Burton beyond the code - music, games, and personal interests.">
+    <link rel="icon" type="image/png" href="iconnew.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <div class="brand">
+                    <a href="index.html" class="brand-link">
+                        <span class="brand-name">Briana Burton</span>
+                        <span class="brand-symbol">*</span>
+                    </a>
+                </div>
+            </div>
+            
+            <nav class="header-nav">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#work" class="nav-link">Work</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#videos" class="nav-link">Videos</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="header-right">
+                <a href="index.html#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <!-- <div class="sidebar-column">
+                <a href="#automation" class="sidebar-link">Automation</a>
+                <a href="#integration" class="sidebar-link">Integration</a>
+                <a href="#web" class="sidebar-link">Web Dev</a>
+                <a href="#ai" class="sidebar-link">AI/ML</a>
+                <a href="#tools" class="sidebar-link">Tools</a>
+            </div> -->
+            <div class="sidebar-column">
+                <a href="https://www.linkedin.com/in/briana-burton" class="sidebar-link">LinkedIn</a>
+                <a href="https://www.youtube.com/@Sayintt" class="sidebar-link">Youtube</a>
+                <a href="https://medium.com/@brianareburton" class="sidebar-link">Blog</a>
+                <a href="persona.html" class="sidebar-link active"><i class="fas fa-star"></i> Personal</a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+
+
+        <!-- Music Section -->
+        <section id="music" class="personal-section">
+            <div class="personal-content">
+                <h2 class="section-title">Music & Sound</h2>
+                
+                                 <!-- Current Vibes -->
+                 <div class="music-section">
+                     <h3 class="music-section-title">Current Vibes</h3>
+                     <p class="music-description">I've always been into techno and trance, but on the opposite side of the spectrum I'm also into contemporary classical.</p>
+                     <div class="video-grid">
+                         <div class="video-card">
+                             <div class="video-thumbnail">
+                                 <img src="https://img.youtube.com/vi/FyS5NHI4aV0/hqdefault.jpg" alt="secretlifer34 - secretlifer9" class="thumbnail-img">
+                                 <div class="play-overlay" onclick="playVideo('FyS5NHI4aV0', this)">
+                                     <i class="fas fa-play"></i>
+                                 </div>
+                             </div>
+                             <div class="video-info">
+                                 <h4>secretlifer34</h4>
+                                 <p class="video-title">secretlifer9</p>
+                                 <p class="video-album">secretlife</p>
+                             </div>
+                             <div class="video-player-inline" id="player-FyS5NHI4aV0"></div>
+                         </div>
+                         
+                           <div class="video-card">
+                              <div class="video-thumbnail">
+                                  <img src="https://img.youtube.com/vi/npBjki9QMkU/hqdefault.jpg" alt="Spiderwrap - Quimico" class="thumbnail-img">
+                                  <div class="play-overlay" onclick="playVideo('npBjki9QMkU', this)">
+                                      <i class="fas fa-play"></i>
+                                  </div>
+                              </div>
+                              <div class="video-info">
+                                  <h4>Spiderwrap</h4>
+                                  <p class="video-title">Quimico</p>
+                                  <p class="video-album">M.A.008</p>
+                              </div>
+                              <div class="video-player-inline" id="player-npBjki9QMkU"></div>
+                          </div>
+                          
+                          <div class="video-card">
+                              <div class="video-thumbnail">
+                                  <img src="https://img.youtube.com/vi/apJJpmX045o/hqdefault.jpg" alt="Stanislav Tolkachev - Sometimes Everything Is Wrong" class="thumbnail-img">
+                                  <div class="play-overlay" onclick="playVideo('apJJpmX045o', this)">
+                                      <i class="fas fa-play"></i>
+                                  </div>
+                              </div>
+                              <div class="video-info">
+                                  <h4>Stanislav Tolkachev</h4>
+                                  <p class="video-title">Sometimes Everything Is Wrong</p>
+                                  <p class="video-album">Hang</p>
+                              </div>
+                              <div class="video-player-inline" id="player-apJJpmX045o"></div>
+                          </div>
+                         
+                         <div class="video-card">
+                             <div class="video-thumbnail">
+                                 <img src="https://img.youtube.com/vi/2V4U4V6ReSk/hqdefault.jpg" alt="Penelope's Fiance - لا تحكي شي" class="thumbnail-img">
+                                 <div class="play-overlay" onclick="playVideo('2V4U4V6ReSk', this)">
+                                     <i class="fas fa-play"></i>
+                                 </div>
+                             </div>
+                             <div class="video-info">
+                                 <h4>Penelope's Fiance</h4>
+                                 <p class="video-title">لا تحكي شي</p>
+                                 <p class="video-album">AM 01:09:69 JUN-05-1970/EXILES</p>
+                             </div>
+                             <div class="video-player-inline" id="player-2V4U4V6ReSk"></div>
+                         </div>
+
+                         <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="https://img.youtube.com/vi/IKIXfjKEdGU/hqdefault.jpg" alt="Caroline Shaw - Entr'acte" class="thumbnail-img">
+                                <div class="play-overlay" onclick="playVideo('IKIXfjKEdGU', this)">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h4>Caroline Shaw</h4>
+                                <p class="video-title">Entr'acte</p>
+                                <p class="video-album">Orange</p>
+                            </div>
+                            <div class="video-player-inline" id="player-IKIXfjKEdGU"></div>
+                        </div>
+                        
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="https://img.youtube.com/vi/vM__F1YMs7s/hqdefault.jpg" alt="Eleni Karaindrou - Seeking" class="thumbnail-img">
+                                <div class="play-overlay" onclick="playVideo('vM__F1YMs7s', this)">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h4>Eleni Karaindrou</h4>
+                                <p class="video-title">Seeking</p>
+                                <p class="video-album">Dust Of Time</p>
+                            </div>
+                            <div class="video-player-inline" id="player-vM__F1YMs7s"></div>
+                        </div>  
+
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="https://img.youtube.com/vi/U3WM3btyP0M/hqdefault.jpg" alt="John Tavener - The Lamb" class="thumbnail-img">
+                                <div class="play-overlay" onclick="playVideo('U3WM3btyP0M', this)">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h4>John Tavener</h4>
+                                <p class="video-title">The Lamb</p>
+                                <p class="vid eo-album">The Lamb</p>
+                            </div>
+                            <div class="video-player-inline" id="player-U3WM3btyP0M"></div>
+                        </div>           
+                        
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="https://img.youtube.com/vi/78exstDhabo/hqdefault.jpg" alt="Arvo Pärt - Stabat Mater" class="thumbnail-img">
+                                <div class="play-overlay" onclick="playVideo('78exstDhabo', this)">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h4>Arvo Pärt</h4>
+                                <p class="video-title">Stabat Mater</p>
+                                <p class="video-album">Stabat Mater</p>
+                            </div>
+                            <div class="video-player-inline" id="player-78exstDhabo"></div>
+                        </div>
+                     </div>
+                 </div>
+                
+                <!-- Genres -->
+                <!-- <div class="music-section">
+                    <h3 class="music-section-title">Favorite Genres</h3>
+                    <div class="genre-tags">
+                        <span class="genre-tag">Electronic</span>
+                        <span class="genre-tag">Ambient</span>
+                        <span class="genre-tag">Lo-fi</span>
+                        <span class="genre-tag">Indie</span>
+                        <span class="genre-tag">IDM</span>
+                        <span class="genre-tag">Post-rock</span>
+                    </div>
+                </div> -->
+                
+                <!-- Podcasts -->
+                <!-- <div class="music-section">
+                    <h3 class="music-section-title">Podcasts</h3>
+                    <div class="podcast-grid">
+                        <div class="podcast-card">
+                            <div class="podcast-icon">
+                                <i class="fas fa-microphone"></i>
+                            </div>
+                            <div class="podcast-info">
+                                <h4>Tech & Science</h4>
+                                <p>Lex Fridman, Joe Rogan Experience</p>
+                            </div>
+                        </div>
+                        
+                        <div class="podcast-card">
+                            <div class="podcast-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="podcast-info">
+                                <h4>Creative & Design</h4>
+                                <p>99% Invisible, Radiolab</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Gaming Section -->
+        <section id="gaming" class="personal-section">
+            <div class="personal-content">
+                <h2 class="section-title">Video Games</h2>
+                
+                <!-- Current Games -->
+                <div class="gaming-section">
+                    <h3 class="gaming-section-title">Current Games & Classic Picks</h3>
+                    <p class="gaming-description">Some of my favorite games that I've played recently and some of my favorite games of all time.</p>
+                    <div class="game-grid">
+                        <div class="game-card">
+                            <div class="game-box-art">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/a/ab/Lost_Kingdoms.jpg" alt="Lost Kingdoms" class="box-art-img">
+                            </div>
+                            <div class="game-info">
+                                <h4>Lost Kingdoms</h4>
+                                <p class="game-genre">RPG / Action</p>
+                                <p class="game-status">Nostalgia Pick</p>
+                            </div>
+                            <div class="game-video-player" id="game-player-8X2kIfS6fb8"></div>
+                        </div>
+                        
+                        <div class="game-card">
+                            <div class="game-box-art">
+                                <img src="https://static.wikia.nocookie.net/silent/images/0/05/SilentHill3Boxart.png/revision/latest?cb=20140809061027" alt="Silent Hill 3" class="box-art-img">
+                            </div>
+                            <div class="game-info">
+                                <h4>Silent Hill 3</h4>
+                                <p class="game-genre">Survival Horror</p>
+                                <p class="game-status">Nostalgia Pick</p>
+                            </div>
+                            <div class="game-video-player" id="game-player-ot7uXNQskhs"></div>
+                        </div>
+                        <div class="game-card">
+                            <div class="game-box-art">
+                                <img src="https://cdn.discordapp.com/attachments/440354170936229902/1411551386172260492/Bloodborne-packaging-001.png?ex=68b5112b&is=68b3bfab&hm=c75584f6af0c31fe065b3e3a4541f9bf082df61a8970e724b66d4117474f86b5" alt="Stardew Valley" class="box-art-img">
+                            </div>
+                            <div class="game-info">
+                                <h4>Bloodborne</h4>
+                                <p class="game-genre">Action / RPG</p>
+                                <p class="game-status">Modern Classic</p>
+                            </div>
+                            <div class="game-video-player" id="game-player-ot7uXNQskhs"></div>
+                        </div>    
+                        
+                        <div class="game-card">
+                            <div class="game-box-art">
+                                <img src="https://m.media-amazon.com/images/I/91ccdImKZUL._UF1000,1000_QL80_.jpg" alt="Metal Gear Solid 5" class="box-art-img">
+                            </div>
+                            <div class="game-info">
+                                <h4>Metal Gear Solid 5</h4>
+                                <p class="game-genre">Action / Stealth</p>
+                                <p class="game-status">Modern Classic</p>
+                            </div>
+                            <div class="game-video-player" id="game-player-ot7uXNQskhs"></div>
+                        </div> 
+                        
+                        
+                        <div class="game-card">
+                            <div class="game-box-art">
+                                <img src="https://images-ext-1.discordapp.net/external/QIpx4qpe731a2uWorioWYg2m03kY6oHcgD6WnTOc9SA/https/gameroom.ee/108411/the-last-of-us-part-ii-remastered.jpg?format=webp&width=809&height=1008" alt="The Last of Us Part II" class="box-art-img">
+                            </div>
+                            <div class="game-info">
+                                <h4>The Last of Us Part II</h4>
+                                <p class="game-genre">Action Adventure</p>
+                                <p class="game-status">Modern Classic</p>
+                            </div>
+                            <div class="game-video-player" id="game-player-ot7uXNQskhs"></div>
+                        </div>       
+                        
+                        
+                        <div class="game-card">
+                            <div class="game-box-art">
+                                <img src="https://cdn.discordapp.com/attachments/440354170936229902/1411563724275318824/675913_front.png?ex=68b51ca9&is=68b3cb29&hm=992ce0da9a12d97a6330258be55d681f84701e286662460c984362766f9745b5" alt="Cyberpunk 2077" class="box-art-img">
+                            </div>
+                            <div class="game-info">
+                                <h4>Cyberpunk 2077</h4>
+                                <p class="game-genre">Action / RPG</p>
+                                <p class="game-status">Modern Classic</p>
+                            </div>
+                            <div class="game-video-player" id="game-player-ot7uXNQskhs"></div>
+                        </div>   
+                        
+                        <div class="game-card">
+                            <div class="game-box-art">
+                                <img src="https://static.wikia.nocookie.net/heavyrain/images/f/f3/Fahrenheit_ps2.jpg/revision/latest?cb=20110327133904" alt="Indigo Prophecy" class="box-art-img">
+                            </div>
+                            <div class="game-info">
+                                <h4>Indigo Prophecy</h4>
+                                <p class="game-genre">Action Adventure</p>
+                                <p class="game-status">Nostalgia Pick</p>
+                            </div>
+                            <div class="game-video-player" id="game-player-ot7uXNQskhs"></div>
+                        </div>     
+                        
+                        <div class="game-card">
+                            <div class="game-box-art">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Super_Mario_Sunshine_Box_Art.png" alt="Super Mario Sunshine" class="box-art-img">
+                            </div>
+                            <div class="game-info">
+                                <h4>Super Mario Sunshine</h4>
+                                <p class="game-genre">Platformer / Adventure</p>
+                                <p class="game-status">Nostalgia Pick</p>
+                            </div>
+                            <div class="game-video-player" id="game-player-ot7uXNQskhs"></div>
+                        </div>                         
+                    </div>
+                </div>
+                
+                <!-- Favorite Classics -->
+                <!-- <div class="gaming-section">
+                    <h3 class="gaming-section-title">Favorite Classics</h3>
+                    <p class="gaming-description">These are the games that shaped my gaming journey and continue to inspire me today.</p>
+                    <div class="game-grid">
+                        <div class="game-card">
+                            <div class="game-box-art">
+                                <img src="https://img.youtube.com/vi/dCjKCfTfw-k/hqdefault.jpg" alt="Final Fantasy VII" class="box-art-img">
+                            </div>
+                            <div class="game-info">
+                                <h4>Final Fantasy VII</h4>
+                                <p class="game-genre">JRPG / Fantasy</p>
+                                <p class="game-status">Nostalgia Pick</p>
+                            </div>
+                            <div class="game-video-player" id="game-player-dCjKCfTfw-k"></div>
+                        </div>
+                        
+                        <div class="game-card">
+                            <div class="game-box-art">
+                                <img src="https://img.youtube.com/vi/8X2kIfS6fb8/hqdefault.jpg" alt="The Witcher 3" class="box-art-img">
+                            </div>
+                            <div class="game-info">
+                                <h4>The Witcher 3</h4>
+                                <p class="game-genre">RPG / Fantasy</p>
+                                <p class="game-status">Modern Classic</p>
+                            </div>
+                            <div class="game-video-player" id="game-player-8X2kIfS6fb8"></div>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- Game Genres -->
+                <!-- <div class="gaming-section">
+                    <h3 class="gaming-section-title">Favorite Genres</h3>
+                    <div class="game-genre-tags">
+                        <span class="game-genre-tag">RPGs</span>
+                        <span class="game-genre-tag">Strategy</span>
+                        <span class="game-genre-tag">Indie Games</span>
+                        <span class="game-genre-tag">JRPGs</span>
+                        <span class="game-genre-tag">Open World</span>
+                        <span class="game-genre-tag">Story-Driven</span>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Other Interests Section -->
+        <!-- <section id="other-interests" class="personal-section">
+            <div class="personal-content">
+                <h2 class="section-title">Other Passions</h2>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Reading</h3>
+                        <p>Books that expand my mind and fuel creativity</p>
+                        <div class="interest-details">
+                            <p><strong>Fiction:</strong> Sci-fi, Fantasy, Literary Fiction</p>
+                            <p><strong>Non-fiction:</strong> Technology, Philosophy, Psychology</p>
+                        </div>
+                    </div>
+                    
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Photography</h3>
+                        <p>Capturing moments and finding beauty in the mundane</p>
+                        <div class="interest-details">
+                            <p><strong>Subjects:</strong> Street Photography, Nature, Architecture</p>
+                            <p><strong>Style:</strong> Minimalist, Documentary, Abstract</p>
+                        </div>
+                    </div>
+                    
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Food & Cooking</h3>
+                        <p>Exploring flavors and the art of creating meals</p>
+                        <div class="interest-details">
+                            <p><strong>Cuisines:</strong> Italian, Japanese, Mexican, Fusion</p>
+                            <p><strong>Approach:</strong> Experimental, Seasonal, Comfort Food</p>
+                        </div>
+                    </div>
+                    
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-hiking"></i>
+                        </div>
+                        <h3>Outdoors</h3>
+                        <p>Finding balance between digital and natural worlds</p>
+                        <div class="interest-details">
+                            <p><strong>Activities:</strong> Hiking, Camping, Urban Exploration</p>
+                            <p><strong>Philosophy:</strong> Digital Detox, Mindful Movement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Back to Main -->
+        <section class="back-to-main">
+            <div class="back-content">
+                <a href="index.html" class="btn btn-primary">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Main Site</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="brand-name">Briana Burton</span>
+                <span class="brand-symbol">*</span>
+            </div>
+            <div class="webring">
+                <a href="https://evilr.ing/corbin-sg/previous" class="webring-link webring-prev">&lt;</a>
+                <a href="https://evilr.ing" class="webring-link webring-home">EVILRING</a>
+                <a href="https://evilr.ing/corbin-sg/next" class="webring-link webring-next">&gt;</a>
+            </div>
+            <div class="footer-button">
+                <img src="https://capstasher.neocities.org/88x31Buttons/iestop.gif" alt="88x31 Button" width="88" height="31">
+                <img src="https://capstasher.neocities.org/88x31Buttons/win95.gif" alt="Windows 95 Button" width="88" height="31">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="threejs-animation.js"></script>
+    <script src="game-box-3d.js"></script>
+    
+         <script>
+         function playVideo(videoId, element) {
+             const videoCard = element.closest('.video-card');
+             const inlinePlayer = videoCard.querySelector('.video-player-inline');
+             const thumbnail = videoCard.querySelector('.video-thumbnail');
+             
+             // Hide thumbnail and show video player
+             thumbnail.style.display = 'none';
+             inlinePlayer.style.display = 'block';
+             
+             // Create YouTube embed iframe
+             inlinePlayer.innerHTML = `<iframe width="100%" height="200" src="https://www.youtube.com/embed/${videoId}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+             
+             // Add active state to clicked card
+             document.querySelectorAll('.video-card').forEach(card => card.classList.remove('active'));
+             videoCard.classList.add('active');
+         }
+         
+                   // Function to reset video cards (optional - you can add a reset button if needed)
+          function resetVideos() {
+              document.querySelectorAll('.video-card').forEach(card => {
+                  const thumbnail = card.querySelector('.video-thumbnail');
+                  const inlinePlayer = card.querySelector('.video-player-inline');
+                  
+                  thumbnail.style.display = 'block';
+                  inlinePlayer.style.display = 'none';
+                  inlinePlayer.innerHTML = '';
+                  card.classList.remove('active');
+              });
+          }
+          
+          // Function to play game videos
+          function playGameVideo(videoId, element) {
+              const gameCard = element.closest('.game-card');
+              const gameVideoPlayer = gameCard.querySelector('.game-video-player');
+              const boxArt = gameCard.querySelector('.game-box-art');
+              
+              // Hide box art and show video player
+              boxArt.style.display = 'none';
+              gameVideoPlayer.style.display = 'block';
+              
+              // Create YouTube embed iframe
+              gameVideoPlayer.innerHTML = `<iframe width="100%" height="200" src="https://www.youtube.com/embed/${videoId}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+              
+              // Add active state to clicked card
+              document.querySelectorAll('.game-card').forEach(card => card.classList.remove('active'));
+              gameCard.classList.add('active');
+          }
+          
+          // Function to reset game cards
+          function resetGameVideos() {
+              document.querySelectorAll('.game-card').forEach(card => {
+                  const boxArt = card.querySelector('.game-box-art');
+                  const gameVideoPlayer = card.querySelector('.game-video-player');
+                  
+                  boxArt.style.display = 'block';
+                  gameVideoPlayer.style.display = 'none';
+                  gameVideoPlayer.innerHTML = '';
+                  card.classList.remove('active');
+              });
+          }
+     </script>
+</body>
+</html> 
